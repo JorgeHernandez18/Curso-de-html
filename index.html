@@ -5,18 +5,60 @@
     <title>Practica de HTML</title>
 </head>
 <body>
-        <form action="/formulario" method="GET">
+
+    <!--Lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <!--Lista ordenada-->
+    <ol>
+        <li value="20">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <!--Sub elementos-->
+            <ol>
+                <!--list-style: lower-alpha retornara la letra menor a los sub elementos-->
+                <li style="list-style: lower-alpha;">Subelemento 1</li>
+                <li style="list-style: lower-alpha;">Subelemento 2</li>
+                <li style="list-style: lower-alpha;">Subelemento 3</li>
+            </ol>
+            </li>
+    </ol>
+
+    <table>
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+
+        <tr>
+            <td>Hola beats</td>
+            <td>Gratis</td>
+        </tr>
+
+    </table>
+
+    <hr>
+        <form action="/formulario" method="POST">
             <label for="Nombre">Nombre</label>
-            <input type="text" id="Nombre" name="Nombre" placeholder="Jorge">
+            <input value="Jorge" type="text" id="Nombre" name="Nombre" placeholder="Jorge">
             <br>
             <label for="Apellido">Apellido</label>
-            <input type="text" id="Apellido" name="Apellido" placeholder="Hernandez">
+            <input value="Hernandez" type="text" id="Apellido" name="Apellido" placeholder="Hernandez">
             <br>
             <label for="comentario">Comentario</label>
             <textarea name="comentario" id="comentario" placeholder="ingresa comentario" cols="30" rows="10"></textarea>
             <br>
-            <input type="submit" >
-            
+            <button type="button">Tipo boton</button>
+            <button type="reset">Tipo reset</button>
+            <button type="submit">Tipo submit</button>
+            <button type="menu">Tipo menu</button>
         </form>
         <h1>Mi primer titulo</h1>
         <p>Mi primer parrafo</p>
