@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Practica de HTML</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 
@@ -31,17 +36,31 @@
             </li>
     </ol>
 
-    <table>
-        <tr>
-            <th>Producto</th>
-            <th>Precio</th>
-        </tr>
+    <table style="width: 500px;">
+        <!--Cabecera de nuestra tabla-->
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <!--Cuerpo de nuestra tabla-->
+        <tbody>
+            <tr>
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+    
+            <tr>
+                <td>Chanchito feliz</td>
+                <td>5$</td>
+            </tr>
+        </tbody>
 
-        <tr>
-            <td>Hola beats</td>
-            <td>Gratis</td>
-        </tr>
-
+        <tfoot>
+            <td></td>
+            <td>Total: 5$</td>
+        </tfoot>
     </table>
 
     <hr>
